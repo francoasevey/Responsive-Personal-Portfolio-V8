@@ -81,6 +81,17 @@ section{
     text-align: center;
     margin-bottom: 6rem;
 }
+.title h2{
+    font-size: 2.5rem;
+    display: inline-block;
+    color: var(--color-text);
+    font-weight: 300;
+}
+.title h2 span{
+    font-size: 2.5rem;
+    color: var(--color-tertiary);
+    font-weight: 900;
+}
 .btn{
     padding: 1rem 3rem;
     position: relative;
@@ -227,4 +238,37 @@ nav{
     height: auto;
     box-shadow: var(--shadow);
     border-radius: .5rem;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.about .left img{
+    max-height: 30rem;
+    width: auto;
+    box-shadow: var(--shadow);
+    border-radius: .5rem 50% .5rem .5rem;
+    transition: var(--transition);
+}
+.about .left img:hover{
+    border-radius: 50% .5rem 5rem .5rem;
+}
+.about .right .title{
+    text-align: start;
+    margin-bottom: 2rem;
+}
+.about .right > h3 {
+    font-size: 1.3rem;
+    color: var(--color-tertiary);
+}
+.about .right > h3 span{
+    font-size: 1.3rem;
+}
+.about .right > p{
+    margin: .5rem 0 2rem;
+}
+.about .right .btn{
+    padding: 1rem 2rem;
 }
