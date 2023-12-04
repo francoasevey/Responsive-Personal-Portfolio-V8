@@ -272,3 +272,67 @@ nav{
 .about .right .btn{
     padding: 1rem 2rem;
 }
+.about .right .container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.progress-bar{
+    position: relative;
+}
+.about .container .outer-circle{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+.container .inner-circle{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--inner-shadow);
+}
+.progress-bar h4{
+    font-weight: 500;
+    font-size: .9rem;
+}
+circle{
+    fill: none;
+    stroke-width: 20px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: js 2.5s linear forwards;
+}
+.container ,.progress-bar:nth-child(2) circle{
+    animation: rj 2.5s linear forwards;
+}
+.container ,.progress-bar:nth-child(3) circle{
+    animation: nj 2.5s linear forwards;
+}
+@keyframes js{
+    100%{
+        stroke-dashoffset: 45;
+    }
+}
+@keyframes rj{
+    100%{
+        stroke-dashoffset: 90;
+    }
+}
+@keyframes nj{
+    100%{
+        stroke-dashoffset: 135;
+    }
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
