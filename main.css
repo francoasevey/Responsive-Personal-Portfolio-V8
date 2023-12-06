@@ -334,7 +334,6 @@ circle{
 }
 .services-container .box i{ 
     font-size: 4rem;
-    color: var(--color-text);
     transition: var(--transition);
     transition-delay: .1s;
 }
@@ -364,7 +363,7 @@ circle{
     background-color: var(--color-tertiary);
     border-radius: 0 50% 50% 50%;
     height: 33rem;
-    width: 33rem;
+    width: 30rem;
     z-index: -1;
     transition: var(--transition);
 }
@@ -377,7 +376,7 @@ circle{
     box-shadow: none;
     background: var(--color-bg);
 }
-.services .box:overlay:hover::after{
+.services .box.overlay:hover::after{
     visibility: visible;
     transform:  scale(100);
 }
