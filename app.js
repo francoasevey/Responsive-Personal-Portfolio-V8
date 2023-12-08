@@ -15,3 +15,14 @@ function tabOpen(x){
     event.currentTarget.classList.add('active');
     document.getElementById(x).classList.add('active-content');
 }
+
+let themeBtn = document.querySelector('#theme-btn');
+
+themeBtn.onclick = function(){
+    themeBtn.classList.toggle('ri-sun-line');
+    if(themeBtn.classList.contains('ri-sun-line')){
+        document.body.classList.add('active');
+    }else{
+        document.body.classList.remove('active')
+    }
+}

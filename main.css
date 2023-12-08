@@ -32,6 +32,14 @@ body{
     height: 130vh;
     position: relative;
 }
+body.active{
+    --color-bg: #212121;
+    --color-text: #e0e0e0;
+    --color-tertiary: crimson;
+
+    --shadow: .5rem .5rem 1rem #111, -.5rem -.5rem 1rem #333;
+    --inner-shadow: inset .5rem .5rem 1rem #111, inset -.5rem -.5rem 1rem #333;
+}
 ::-webkit-scrollbar{
     width: .6rem;
 }
@@ -540,7 +548,7 @@ circle{
     width: 100%;
     border: none;
     border-radius: 3rem;
-    padding: .8rem;
+    padding: .8rem 1.2rem;
     margin: .5rem 0;
     font-size: 85%;
     font-family: inherit;
@@ -549,12 +557,26 @@ circle{
     color: var(--color-text);
     box-shadow: var(--shadow);
 }
+.contact-content textarea{
+    border-radius: 1rem;
+}
 .contact-form .btn{
     border-radius: 3rem;
 }
 .contact-form .btn span{
     font-weight: 900;
-    font-size: 90%;
+    font-size: 96%;
+    letter-spacing: .05rem;
+}
+
+.copyright{
+    text-align: center;
+    font-size: .9rem;
+    padding: 1rem 0;
+    box-shadow: var(--shadow);
+}
+.copyright p a{
+    color: var(--color-tertiary);
 }
 @keyframes js{
     100%{
