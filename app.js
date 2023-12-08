@@ -1,3 +1,11 @@
+const navList = document.querySelector('.navlist');
+const menuBtn = document.querySelector('.ri-menu-line');
+
+menuBtn.onclick = function(){
+    navList.classList.toggle('active');
+    menuBtn.classList.toggle('ri-arrow-up-double-line');
+}
+
 window.addEventListener('scroll', ()=>{
     document.querySelector('nav').classList.toggle('scrolling',scrollY > 50)
 })
