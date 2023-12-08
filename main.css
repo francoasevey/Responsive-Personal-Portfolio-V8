@@ -133,7 +133,15 @@ section{
 
 nav{
     padding: .3rem 0;
-    transition: var(--transition);
+    transition: .3s ease-in-out;
+}
+nav.scrolling{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--color-bg);
+    z-index: 11111;
+    box-shadow: var(--shadow);
 }
 .nav-container{
     display: flex;

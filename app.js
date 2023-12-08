@@ -1,3 +1,7 @@
+window.addEventListener('scroll', ()=>{
+    document.querySelector('nav').classList.toggle('scrolling',scrollY > 50)
+})
+
 var portfolioTabs = document.getElementsByClassName('portfolio-tab');
 var tabContents = document.getElementsByClassName('tab-content');
 
