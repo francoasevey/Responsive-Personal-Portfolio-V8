@@ -498,6 +498,64 @@ circle{
     border: .3rem solid var(--color-bg);
     box-shadow: var(--shadow);
 }
+.testimonial-container h3{
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-bottom: .7rem;
+}
+
+.contact-content .row{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.contact-content .box{
+    padding: 1.2rem .8rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+.contact-content i{
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+    color: var(--color-tertiary);
+}
+.contact-content span{
+    color: #555;
+}
+.contact-content h4{
+    font-size: .94rem;
+}
+.contact-content .contact-form{
+    width: 600px;
+    padding: 1.4rem 4.1rem;
+    background: transparent;
+    margin: 1.4rem 0;
+    box-shadow: var(--shadow);
+    border-radius: .5rem;
+}
+.contact-content input,
+.contact-content textarea{
+    width: 100%;
+    border: none;
+    border-radius: 3rem;
+    padding: .8rem;
+    margin: .5rem 0;
+    font-size: 85%;
+    font-family: inherit;
+    font-weight: inherit;
+    background: var(--color-bg);
+    color: var(--color-text);
+    box-shadow: var(--shadow);
+}
+.contact-form .btn{
+    border-radius: 3rem;
+}
+.contact-form .btn span{
+    font-weight: 900;
+    font-size: 90%;
+}
 @keyframes js{
     100%{
         stroke-dashoffset: 45;
