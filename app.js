@@ -34,3 +34,21 @@ themeBtn.onclick = function(){
         document.body.classList.remove('active')
     }
 }
+
+const sr = ScrollReveal({
+    distance : '80px',
+    duration: 2500,
+    delay: 200,
+    reset: true,
+});
+
+sr.reveal('.home-container .left', {origin: 'top'});
+sr.reveal('.home-container .right', {origin: 'left'});
+sr.reveal('.home-container .right', {origin: 'top'});
+sr.reveal('.about-container .left', {origin: 'left'});
+sr.reveal('.services-container', {origin: 'bottom'});
+sr.reveal('.portfolio-container', {origin: 'left'});
+sr.reveal('.portfolio-buttons', {origin: 'top'});
+sr.reveal('.testimonial-container', {origin: 'bottom'});
+sr.reveal('.contact-content', {origin: 'top'});
+sr.reveal('.copyright', {origin: 'bottom'});

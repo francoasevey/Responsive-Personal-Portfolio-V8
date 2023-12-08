@@ -607,6 +607,7 @@ svg{
         flex-direction: column;
         position: absolute;
         top: 11rem;
+        right: 0;
         width: var(--width-lg);
         box-shadow: var(--shadow);
         background: var(--color-bg);
@@ -683,5 +684,38 @@ svg{
     }
     .portfolio-container .tab-content{
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 660px) {
+    .container{
+        width: var(--width-sm);
+    }
+    .logo{
+        padding: .2rem .5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .about .left img{
+        max-height: 25rem;
+    }
+    .about .right .container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .services-container .box{
+        width: calc(100% - 1.5rem);
+    }
+    .portfolio-container .tab-content{
+        grid-template-columns: 1fr;
+    }
+    .testimonial-container .card{
+        min-width: 100%;
+    }
+    .contact-content .contact-form{
+        padding: 1rem;
+        margin: 1.5rem 0;
     }
 }
